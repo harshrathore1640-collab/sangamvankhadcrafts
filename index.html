@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangam Wankhade Crafts | Indian Stone Sculptor & Heritage Art</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        stoneGold: {
+                            50: '#fbf9f5',
+                            100: '#f2ece1',
+                            200: '#e5d9c3',
+                            300: '#d3be9d',
+                            400: '#bc9f72',
+                            500: '#a38250',
+                            600: '#87673e',
+                            700: '#6c5132',
+                            800: '#58432c',
+                            900: '#483726',
+                        },
+                        artCharcoal: {
+                            light: '#2a2724',
+                            DEFAULT: '#1c1a18',
+                            dark: '#11100f'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(17, 16, 15, 0.9) 0%, rgba(42, 39, 36, 0.8) 100%);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1c1a18;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #a38250;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-artCharcoal-dark font-sans text-stone-200 antialiased selection:bg-stoneGold-500 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-artCharcoal-dark text-stoneGold-300 text-xs sm:text-sm py-2.5 px-4 border-b border-stoneGold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span><i class="fas fa-phone-alt text-stoneGold-400 mr-2"></i><a href="tel:9662039117" class="hover:text-white transition">+91 96620-39117</a></span>
+                <span class="hidden md:inline"><i class="fas fa-envelope text-stoneGold-400 mr-2"></i>Sangamvankhade@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-stone-400">Master Indian Stone Sculptor & Heritage Art Studio</span>
+                <div class="flex gap-3 text-stoneGold-400">
+                    <a href="https://pin.it/7ljbOMaEc" target="_blank" class="hover:text-white transition" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-artCharcoal/95 backdrop-blur-md shadow-lg border-b border-stoneGold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-stoneGold-500/20 flex items-center justify-center text-stoneGold-400 font-cinzel font-bold text-xl border border-stoneGold-500/40">
+                    SV
+                </div>
+                <div>
+                    <span class="font-cinzel font-bold text-lg sm:text-2xl text-white tracking-wider block">SANGAM WANKHADE</span>
+                    <span class="text-[10px] tracking-widest text-stoneGold-400 uppercase font-semibold block -mt-1">Stone Sculptor & Heritage Art</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-stone-300">
+                <a href="#home" class="hover:text-stoneGold-400 transition">Home</a>
+                <a href="#about" class="hover:text-stoneGold-400 transition">The Artist</a>
+                <a href="#artworks" class="hover:text-stoneGold-400 transition">Sculptures & Heritage</a>
+                <a href="#process" class="hover:text-stoneGold-400 transition">Craftsmanship</a>
+                <a href="#contact" class="hover:text-stoneGold-400 transition">Custom Commission</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/919662039117" target="_blank" class="bg-stoneGold-500 hover:bg-stoneGold-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> Inquire Art
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-stoneGold-300 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-artCharcoal border-b border-stoneGold-500/20 px-6 py-4 space-y-3 font-medium text-stone-300">
+            <a href="#home" class="block hover:text-stoneGold-400 py-1">Home</a>
+            <a href="#about" class="block hover:text-stoneGold-400 py-1">The Artist</a>
+            <a href="#artworks" class="block hover:text-stoneGold-400 py-1">Sculptures & Heritage</a>
+            <a href="#process" class="block hover:text-stoneGold-400 py-1">Craftsmanship</a>
+            <a href="#contact" class="block hover:text-stoneGold-400 py-1">Custom Commission</a>
+            <div class="pt-2">
+                <a href="https://wa.me/919662039117" target="_blank" class="w-full bg-stoneGold-500 text-white text-center py-2.5 rounded-full font-semibold block">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-artCharcoal-dark overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=1920" alt="Stone Sculpture Artwork" class="w-full h-full object-cover object-center opacity-30 transform scale-105 animate-pulse duration-10000">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-20">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-stoneGold-500/20 text-stoneGold-300 border border-stoneGold-400/30 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm">
+                Bespoke Marble Carvings & Architectural Heritage Art
+            </span>
+            <h1 class="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-wide mb-6 leading-tight">
+                Sculpting Eternal Stories in <span class="text-stoneGold-400">Stone & Marble</span>
+            </h1>
+            <p class="text-stone-300 text-base sm:text-xl max-w-3xl mx-auto font-light mb-10 leading-relaxed">
+                Handcrafted stone sculptures, intricate temple architecture, classical relief panels, and timeless heritage art created with precision and devotion by master artisan Sangam Wankhade.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#artworks" class="w-full sm:w-auto bg-stoneGold-500 hover:bg-stoneGold-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition duration-300 text-center">
+                    Explore Gallery
+                </a>
+                <a href="https://wa.me/919662039117?text=Hello%20Sangam,%20I%20would%20like%20to%20discuss%20a%20custom%20stone%20sculpture%20or%20heritage%20art%20commission." target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-8 py-4 rounded-full backdrop-blur-sm transition duration-300 text-center flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-green-400 text-lg"></i> Direct Artist Chat
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/10 text-center">
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-stoneGold-400 block mb-1">100+</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Master Sculptures</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-stoneGold-400 block mb-1">Custom</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Bespoke Commissions</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-stoneGold-400 block mb-1">100%</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Hand Chiseled Art</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-stoneGold-400 block mb-1">Global</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Worldwide Shipping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Artist Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-artCharcoal">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-stoneGold-500/30">
+                    <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&q=80&w=1000" alt="Sangam Wankhade Sculpting" class="w-full h-[480px] object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 z-20 bg-artCharcoal-dark text-white p-6 rounded-2xl shadow-xl hidden sm:block border border-stoneGold-400/30 max-w-xs">
+                    <span class="font-cinzel text-stoneGold-400 text-xl font-bold block mb-1">Sangam Wankhade</span>
+                    <span class="text-xs text-stone-300 uppercase tracking-wider block">Indian Stone Sculptor & Heritage Artist</span>
+                </div>
+                <div class="absolute -top-6 -left-6 w-48 h-48 bg-stoneGold-500/10 rounded-full -z-10 blur-2xl opacity-70"></div>
+            </div>
+            <div class="space-y-6">
+                <span class="text-stoneGold-400 font-semibold uppercase tracking-widest text-sm block">Meet The Sculptor</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                    Giving Form & Life to Raw Stone Through Traditional Craft
+                </h2>
+                <p class="text-stone-300 leading-relaxed font-light text-base sm:text-lg">
+                    As an accomplished Indian stone sculptor, Sangam Wankhade breathes soul into raw blocks of marble, sandstone, and granite. Specializing in classical temple architecture, intricate relief panels, life-like figurative sculptures, and architectural heritage decor, every piece reflects an unwavering commitment to traditional chisel work and fine aesthetic detail.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-start gap-3 bg-artCharcoal-dark p-4 rounded-xl border border-stoneGold-500/20">
+                        <div class="text-stoneGold-400 text-xl mt-1"><i class="fas fa-hammer"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Hand Carved Perfection</h4>
+                            <p class="text-stone-400 text-xs sm:text-sm">Traditional chisel and mallet techniques passed down through generations.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 bg-artCharcoal-dark p-4 rounded-xl border border-stoneGold-500/20">
+                        <div class="text-stoneGold-400 text-xl mt-1"><i class="fas fa-landmark"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Heritage Architecture</h4>
+                            <p class="text-stone-400 text-xs sm:text-sm">Authentic restoration, classical mandirs, and historical motifs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artworks / Sculptures Gallery Section -->
+    <section id="artworks" class="py-20 px-4 sm:px-6 lg:px-8 bg-artCharcoal-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-stoneGold-400 font-semibold uppercase tracking-widest text-sm block mb-2">Masterpiece Portfolio</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-4">Sculptures, Marble & Heritage Arts</h2>
+                <p class="text-stone-300 font-light text-base sm:text-lg">Explore our curated collection of custom stone sculptures, architectural relief carvings, and fine marble art pieces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-artCharcoal rounded-2xl overflow-hidden shadow-xl border border-stoneGold-500/20 hover:border-stoneGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800" alt="Classical Marble Sculpture" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-artCharcoal-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-artCharcoal/90 text-stoneGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-stoneGold-500/30">Marble & Stone</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Classical & Figurative Sculptures</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Exquisite statues and relief busts carved from pristine white marble and fine-grained sandstone with expressive facial features and drapery.</p>
+                        </div>
+                        <button onclick="openInquiry('Classical & Figurative Sculptures')" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Commission Artwork
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-artCharcoal rounded-2xl overflow-hidden shadow-xl border border-stoneGold-500/20 hover:border-stoneGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=800" alt="Heritage Relief Art" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-artCharcoal-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-artCharcoal/90 text-stoneGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-stoneGold-500/30">Relief Carving</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Heritage Architectural Panels</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Deep-relief wall panels depicting mythological narratives, royal court scenes, and traditional Indian floral motifs for luxury interiors.</p>
+                        </div>
+                        <button onclick="openInquiry('Heritage Architectural Panels')" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Commission Artwork
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-artCharcoal rounded-2xl overflow-hidden shadow-xl border border-stoneGold-500/20 hover:border-stoneGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582561214170-c3d526715fbc?auto=format&fit=crop&q=80&w=800" alt="Temple Architecture" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-artCharcoal-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-artCharcoal/90 text-stoneGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-stoneGold-500/30">Mandir Art</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Marble Temples & Mandirs</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Custom-designed home and public temples featuring intricate jali pillars, domes, sanctum arches, and sacred iconography.</p>
+                        </div>
+                        <button onclick="openInquiry('Marble Temples & Mandirs')" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Commission Artwork
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-artCharcoal rounded-2xl overflow-hidden shadow-xl border border-stoneGold-500/20 hover:border-stoneGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="Interior Stone Artifacts" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-artCharcoal-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-artCharcoal/90 text-stoneGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-stoneGold-500/30">Luxury Decor</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Interior Decor & Fountains</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Hand-carved stone fountains, decorative planters, table bases, and bespoke architectural elements for luxury residences.</p>
+                        </div>
+                        <button onclick="openInquiry('Interior Decor & Fountains')" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Commission Artwork
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-artCharcoal rounded-2xl overflow-hidden shadow-xl border border-stoneGold-500/20 hover:border-stoneGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800" alt="Traditional Jali Work" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-artCharcoal-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-artCharcoal/90 text-stoneGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-stoneGold-500/30">Jali & Lattice</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Fine Stone Jali & Screens</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Lattice screens and geometrical jalis hand-carved in marble and sandstone for light diffusion and architectural elegance.</p>
+                        </div>
+                        <button onclick="openInquiry('Fine Stone Jali & Screens')" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Commission Artwork
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-artCharcoal rounded-2xl overflow-hidden shadow-xl border border-stoneGold-500/20 hover:border-stoneGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=800" alt="Custom Masterpieces" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-artCharcoal-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-artCharcoal/90 text-stoneGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-stoneGold-500/30">Custom Order</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Custom Sculptural Commissions</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Bring your unique concept to life. We collaborate with architects, interior designers, and art collectors for bespoke stonework.</p>
+                        </div>
+                        <button onclick="openInquiry('Custom Sculptural Commissions')" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Commission Artwork
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Process Section -->
+    <section id="process" class="py-20 bg-artCharcoal px-4 sm:px-6 lg:px-8 border-t border-b border-stoneGold-500/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-stoneGold-400 font-semibold uppercase tracking-widest text-sm block mb-2">Artistic Journey</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-4">From Raw Stone to Masterpiece</h2>
+                <p class="text-stone-300 font-light text-base sm:text-lg">The meticulous multi-stage process of creating timeless stone and heritage art.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-artCharcoal-dark p-8 rounded-2xl border border-stoneGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-stoneGold-500/20 text-stoneGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-stoneGold-500/40">01</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Stone Selection</h3>
+                    <p class="text-stone-400 text-sm font-light">Sourcing flawless blocks of premium white marble, Makrana, sandstone, or granite.</p>
+                </div>
+                <div class="bg-artCharcoal-dark p-8 rounded-2xl border border-stoneGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-stoneGold-500/20 text-stoneGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-stoneGold-500/40">02</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Design & Sketching</h3>
+                    <p class="text-stone-400 text-sm font-light">Drafting detailed proportions and transferring traditional or modern motifs onto stone.</p>
+                </div>
+                <div class="bg-artCharcoal-dark p-8 rounded-2xl border border-stoneGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-stoneGold-500/20 text-stoneGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-stoneGold-500/40">03</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Hand Chiseling</h3>
+                    <p class="text-stone-400 text-sm font-light">Hours of patient manual carving, shaping contours, and chiselling intricate relief details.</p>
+                </div>
+                <div class="bg-artCharcoal-dark p-8 rounded-2xl border border-stoneGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-stoneGold-500/20 text-stoneGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-stoneGold-500/40">04</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Polishing & Finishing</h3>
+                    <p class="text-stone-400 text-sm font-light">Fine abrasive sanding and polishing to reveal the natural luminescence and texture of stone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Commission Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-artCharcoal-dark">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <span class="text-stoneGold-400 font-semibold uppercase tracking-widest text-sm block">Start a Commission</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                    Discuss Your Vision With Sangam Wankhade
+                </h2>
+                <p class="text-stone-300 font-light leading-relaxed">
+                    Whether you are an art collector, architect, or temple committee looking for bespoke stone sculptures or heritage architectural elements, connect directly with sculptor Sangam Wankhade.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4 bg-artCharcoal p-4 rounded-xl shadow-sm border border-stoneGold-500/20">
+                        <div class="w-12 h-12 rounded-full bg-stoneGold-500/20 text-stoneGold-400 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">Call Artist Directly</span>
+                            <a href="tel:9662039117" class="font-bold text-white text-lg hover:text-stoneGold-400 transition">+91 96620-39117</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-artCharcoal p-4 rounded-xl shadow-sm border border-stoneGold-500/20">
+                        <div class="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">WhatsApp Consultation</span>
+                            <a href="https://wa.me/919662039117" target="_blank" class="font-bold text-white text-lg hover:text-green-400 transition">+91 96620-39117</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-artCharcoal p-4 rounded-xl shadow-sm border border-stoneGold-500/20">
+                        <div class="w-12 h-12 rounded-full bg-stoneGold-500/20 text-stoneGold-400 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">Email Inquiries</span>
+                            <span class="font-bold text-white text-base">Sangamvankhade@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="bg-artCharcoal p-8 rounded-2xl shadow-xl border border-stoneGold-500/20">
+                <h3 class="font-cinzel text-2xl font-bold text-white mb-6">Commission Inquiry Form</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Your Full Name</label>
+                        <input type="text" id="form-name" required class="w-full bg-artCharcoal-dark border border-stoneGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-stoneGold-500 transition" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Phone Number</label>
+                        <input type="tel" id="form-phone" required class="w-full bg-artCharcoal-dark border border-stoneGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-stoneGold-500 transition" placeholder="Enter phone number">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Artwork / Service Type</label>
+                        <select id="form-product" class="w-full bg-artCharcoal-dark border border-stoneGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-stoneGold-500 transition">
+                            <option value="Classical & Figurative Sculptures">Classical & Figurative Sculptures</option>
+                            <option value="Heritage Architectural Panels">Heritage Architectural Panels</option>
+                            <option value="Marble Temples & Mandirs">Marble Temples & Mandirs</option>
+                            <option value="Interior Decor & Fountains">Interior Decor & Fountains</option>
+                            <option value="Fine Stone Jali & Screens">Fine Stone Jali & Screens</option>
+                            <option value="Custom Sculptural Commissions">Custom Sculptural Commissions</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Project Details & Requirements</label>
+                        <textarea id="form-message" rows="4" class="w-full bg-artCharcoal-dark border border-stoneGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-stoneGold-500 transition" placeholder="Describe your stone choice, dimensions, and vision..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-stoneGold-500 hover:bg-stoneGold-600 text-white font-semibold py-4 rounded-xl shadow-lg transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> Send Commission Request via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-artCharcoal-dark text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-stoneGold-500/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-stoneGold-500 flex items-center justify-center text-artCharcoal-dark font-cinzel font-bold text-lg">
+                        SV
+                    </div>
+                    <span class="font-cinzel font-bold text-white text-xl tracking-wider">SANGAM WANKHADE</span>
+                </div>
+                <p class="text-sm font-light leading-relaxed">
+                    Master Indian Stone Sculptor specializing in marble carvings, heritage art restoration, and bespoke architectural sculptures.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-stoneGold-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-stoneGold-400 transition">The Artist</a></li>
+                    <li><a href="#artworks" class="hover:text-stoneGold-400 transition">Sculptures</a></li>
+                    <li><a href="#process" class="hover:text-stoneGold-400 transition">Craftsmanship</a></li>
+                    <li><a href="#contact" class="hover:text-stoneGold-400 transition">Commission</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Art Categories</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="hover:text-stoneGold-400 transition cursor-pointer" onclick="openInquiry('Classical & Figurative Sculptures')">Figurative Sculptures</span></li>
+                    <li><span class="hover:text-stoneGold-400 transition cursor-pointer" onclick="openInquiry('Heritage Architectural Panels')">Heritage Panels</span></li>
+                    <li><span class="hover:text-stoneGold-400 transition cursor-pointer" onclick="openInquiry('Marble Temples & Mandirs')">Marble Temples</span></li>
+                    <li><span class="hover:text-stoneGold-400 transition cursor-pointer" onclick="openInquiry('Interior Decor & Fountains')">Stone Fountains</span></li>
+                    <li><span class="hover:text-stoneGold-400 transition cursor-pointer" onclick="openInquiry('Fine Stone Jali & Screens')">Jali & Lattice Screens</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Contact Artist</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fas fa-phone-alt text-stoneGold-400 mr-2"></i> <a href="tel:9662039117" class="hover:text-white">+91 96620-39117</a></li>
+                    <li><i class="fab fa-whatsapp text-green-400 mr-2"></i> <a href="https://wa.me/919662039117" target="_blank" class="hover:text-white">+91 96620-39117</a></li>
+                    <li><i class="fas fa-envelope text-stoneGold-400 mr-2"></i> Sangamvankhade@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt text-stoneGold-400 mr-2"></i> India (Worldwide Shipping)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-stoneGold-500/10 text-center text-xs text-stone-500">
+            &copy; 2026 Sangam Wankhade Crafts. All Rights Reserved. Crafted for Fine Art Collectors & Architects.
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Action Buttons (15-20% smaller, polished, functional) -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-2.5 items-end">
+        <!-- Call Button -->
+        <a href="tel:9662039117" aria-label="Call Sangam Wankhade" class="w-11 h-11 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span class="absolute right-14 bg-artCharcoal-dark text-white text-[11px] font-medium py-1 px-2.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-stoneGold-500/20 pointer-events-none">
+                Call Artist
+            </span>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919662039117?text=Hello%20Sangam%20Wankhade,%20I%20would%20like%20to%20inquire%20about%20your%20stone%20sculptures%20and%20heritage%20art." target="_blank" aria-label="WhatsApp Sangam Wankhade" class="w-11 h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span class="absolute right-14 bg-artCharcoal-dark text-white text-[11px] font-medium py-1 px-2.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-stoneGold-500/20 pointer-events-none">
+                WhatsApp Us
+            </span>
+        </a>
+    </div>
+
+    <!-- JavaScript functionality -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quick inquiry function
+        function openInquiry(productName) {
+            const phoneNumber = "919662039117";
+            const message = encodeURIComponent(`Hello Sangam Wankhade, I am interested in your artwork "${productName}". Please share details, pricing, and availability.`);
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        // Form submission via WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const product = document.getElementById('form-product').value;
+            const message = document.getElementById('form-message').value;
+
+            const whatsappNumber = "919662039117";
+            const text = encodeURIComponent(`New Commission Inquiry:\n\nName: ${name}\nPhone: ${phone}\nArtwork Type: ${product}\nDetails: ${message}`);
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
